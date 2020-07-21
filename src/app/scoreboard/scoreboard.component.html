@@ -1,0 +1,10 @@
+<button id="increment" (click)="homeScore()">Home score</button>
+
+<button id="decrement" (click)="awayScore()">Away score</button>
+
+<button id="reset" (click)="resetScore()">Reset score</button>
+
+<br>
+
+home: <input type="text" #home> / away: <input type="text" #away> <button id="setScores" (click)="setScores()">Set score</button>
+<div>Home score: {{ (scoreboard$ | async).home }} / Away score: {{ (scoreboard$ | async).away }}</div>
